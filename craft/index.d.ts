@@ -7,7 +7,7 @@ declare interface JQueryStatic {
   };
 }
 
-declare interface JQuery<T> {
+declare interface JQuery<TElement = HTMLElement> extends Iterable<TElement> {
   datepicker(options: any): any;
   lightswitch(): any;
   timepicker(options: any): any;
