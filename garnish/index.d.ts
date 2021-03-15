@@ -2,3 +2,4 @@
 /// <reference path="./Drag.d.ts"/>
 /// <reference path="./DragSort.d.ts"/>
 /// <reference path="./Garnish.d.ts"/>
+/// <reference path="./MenuBtn.d.ts"/>

@@ -31,8 +31,8 @@ declare namespace Garnish {
   export const SECONDARY_CLICK: 3;
 
   // Axis constants
-  export const X_AXIS: 'x';
-  export const Y_AXIS: 'y';
+  export const X_AXIS: "x";
+  export const Y_AXIS: "y";
 
   export const FX_DURATION: 100;
 
@@ -246,13 +246,13 @@ declare namespace Garnish {
   export function off(target: any, events: EventNames, handler: Function): void;
 
   export class Base<TSettings = any> {
-    settings: T | null;
+    settings: TSettings | null;
     private _eventHandlers: any[];
     private _namespace: string;
     private _listeners: any[];
     private _disabled: boolean;
 
-    init(): void;
+    init(...args: any[]): void;
     setSettings(settings: Partial<TSettings>, defaults: any): void;
     on(events: EventNames, handler: Function): void;
     on(events: EventNames, data: any, handler: Function): void;

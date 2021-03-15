@@ -50,11 +50,8 @@ declare namespace Garnish {
      * @param {object} items    Elements that should be draggable right away. (Can be skipped.)
      * @param {object} settings Any settings that should override the defaults.
      */
-    constructor(settings: Partial<TSettings>): void;
-    constructor(
-      items: ArrayLike<HTMLElement>,
-      settings: Partial<TSettings>
-    ): void;
+    constructor(settings: Partial<TSettings>);
+    constructor(items: ArrayLike<HTMLElement>, settings: Partial<TSettings>);
 
     init(settings: Partial<TSettings>): void;
     init(items: ArrayLike<HTMLElement>, settings: Partial<TSettings>): void;
